@@ -853,7 +853,7 @@ function main()
     sampRegisterChatCommand('save', cmd_cfg)
     sampRegisterChatCommand('twink', cmd_che)
     if not doesFileExist then
-        downloadUrlToFile('https://raw.githubusercontent.com/Vladislave232/Beta-Test/main/EkbToolCrasher.lua?token=GHSAT0AAAAAACDEPWMEN3OPN6EVVOGGIJJGZEYCKDQ', getWorkingDirectory() .. '/EkbToolCrasher.lua', function(id, status)
+        downloadUrlToFile('https://raw.githubusercontent.com/Vladislave232/scripts/main/EkbToolCrasher.lua', getWorkingDirectory() .. '/EkbToolCrasher.lua', function(id, status)
             if status == dlstatus.STATUS_ENDDOWNLOADDATA then
             end
         end)
