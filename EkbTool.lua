@@ -840,8 +840,8 @@ local elements = {
 function main()
     if not isSampLoaded() or not isSampfuncsLoaded then return end
     while not isSampAvailable() do wait(1000) end
-    obnova.obnova.vers = '1'
-    obnova.obnova.script_vers_text = 'Beta-Test 1.00'
+    obnova.obnova.vers = '2'
+    obnova.obnova.script_vers_text = 'Beta-Test 1.01'
     inicfg.save(obnova, "obnova.ini")
     sampAddChatMessage('{FF0000}[Игровой Помощник: Биги] {00FF00}Биги запустился. Чтобы использовать введите - /tool. {4B0082}Ваша версия: ' .. script_vers_text, -1)
     sampRegisterChatCommand("car", cmd_basa)
